@@ -1,0 +1,73 @@
+body {
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: hsl(0, 0%, 95%);
+}
+
+#calculator {
+   font-family: Arial, sans-serif;
+   background-color: hsl(0, 0%, 15%);
+   border-radius: 1.5rem;
+   width: 90vw;
+   max-width: 500px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#display {
+   width: 100%;
+   padding: 2vh;
+   font-size: 5vw;
+   text-align: right; /* Right align for calculator display */
+   border: none;
+   background-color: hsl(0, 0%, 20%);
+   color: white;
+   box-sizing: border-box;
+}
+
+#key {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+   gap: 1vh;
+   padding: 2vh;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+button {
+   width: 100%;
+   padding: 2vh;
+   border-radius: 15px;
+   border: none;
+   color: white;
+   background-color: hsl(0, 0%, 30%);
+   font-size: 3vw;
+   font-weight: bold;
+   cursor: pointer;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+button:hover {
+   background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+   background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+   background-color: hsl(35, 100%, 55%);
+   grid-column: 1 / 2; /* Place in the first column */
+}
+
+.operator-btn:hover {
+   background-color: hsl(35, 86%, 48%);
+}
